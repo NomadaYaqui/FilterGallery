@@ -1,0 +1,22 @@
+{
+  "name": "galeria-imagenes",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "parcel src/index.html --open --port 3000",
+    "build": "parcel build src/index.html --public-url ./",
+    "clean": "rm -rf dist .parcel-cache",
+    "format": "prettier --write src/**/*.{html,scss,js}"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.13.3",
+    "prettier": "^3.5.0",
+    "sass": "^1.84.0"
+  },
+  "browserslist": [
+    "defaults"
+  ]
+}

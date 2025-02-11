@@ -1,0 +1,22 @@
+# Dependencias de Node.js
+node_modules/
+package-lock.json
+
+# Archivos de compilación o temporales
+dist/
+build/
+.DS_Store
+Thumbs.db
+
+# Configuración de editores
+.vscode/
+.idea/
+
+# Archivos de entorno (si usas variables de entorno)
+.env
+.env.local
+
+# Archivos a ignorar
+dist/
+.parcel-cache/
+.DS_Store
