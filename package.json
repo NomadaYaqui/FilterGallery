@@ -1,19 +1,24 @@
 {
   "name": "galeria-imagenes",
+  "source": "src/index.html",
   "version": "1.0.0",
   "scripts": {
     "start": "parcel src/index.html --open --port 3000",
-    "build": "parcel build src/index.html --public-url ./",
-    "clean": "rm -rf dist .parcel-cache",
-    "format": "prettier --write src/**/*.{html,scss,js}"
+    "dev": "parcel /index.html --no-cache",
+    "build": "parcel build src/index.html --dist-dir dist --no-content-hash",
+    "clean": "rimraf dist .parcel-cache",
+    "format": "prettier --write src/**/*.{html,scss,js}",
+    "preview": "npx serve dist"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
-    "bootstrap": "^5.3.0"
+    "bootstrap": "^5.3.3"
   },
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.13.3",
     "parcel": "^2.13.3",
     "prettier": "^3.5.0",
+    "rimraf": "^6.0.1",
     "sass": "^1.84.0"
   },
   "browserslist": [

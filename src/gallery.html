@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería Filtrable</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <link rel="stylesheet" href="/src/css/styles.scss">
+
+
+
+</head>
+
+<body>
+
+
+    <div class="container text-center mt-3">
+        <h2 class="mb-3">Categorías de Imágenes</h2>
+        <button class="btn btn-primary filter-btn" data-filter="*">Todos</button>
+        <button class="btn btn-secondary filter-btn" data-filter=".paisaje">Paisajes</button>
+        <button class="btn btn-secondary filter-btn" data-filter=".ciudad">Ciudades</button>
+
+        <div class="row grid mt-4">
+            <div class="grid-item paisaje"><img src="/public/images/paisaje.jpg" alt="Paisaje"></div>
+            <div class="grid-item ciudad"><img src="/public/images/ciudad.jpg" alt="Ciudad"></div>
+            <div class="grid-item paisaje"><img src="/public/images/paisaje 2.jpg" alt="Paisaje"></div>
+            <div class="grid-item ciudad"><img src="/public/images/ciudad 2.jpg" alt="Ciudad"></div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            var $grid = $('.grid').isotope({
+                itemSelector: '.grid-item',
+                layoutMode: 'fitRows'
+            });
+
+            $('.filter-btn').on('click', function () {
+                var filterValue = $(this).attr('data-filter');
+                $grid.isotope({ filter: filterValue });
+            });
+        });
+    </script>
+
+
+
+</body>
+
+</html>
