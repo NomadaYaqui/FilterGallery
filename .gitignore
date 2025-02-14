@@ -17,6 +17,6 @@ Thumbs.db
 .env.local
 
 # Archivos a ignorar
-dist/
+
 .parcel-cache/
 .DS_Store
