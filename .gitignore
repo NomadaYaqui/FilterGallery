@@ -3,7 +3,7 @@ node_modules/
 
 
 # Archivos de compilación o temporales
-dist/
+
 build/
 .DS_Store
 Thumbs.db
