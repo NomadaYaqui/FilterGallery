@@ -3,16 +3,97 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Galería con NPM</title>
-    <!-- CSS se inyectará automáticamente por Parcel -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mi Proyecto - Landing Page</title>
+
+
 </head>
 
 <body>
-    <!-- Contenido igual que antes pero con rutas relativas a public/ -->
-    <img src="../public/images/tu-imagen.jpg" class="gallery-item">
 
-    <!-- Scripts (se compilarán automáticamente) -->
-    <script type="module" src="./js/app.js"></script>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Mi Proyecto</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">Resumen</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Funcionalidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#team">Equipo</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-primary text-white"
+                            href="/src/gallery.html">Explorar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Resumen -->
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1>Bienvenido a Mi Proyecto</h1>
+            <p class="lead">Una plataforma para explorar imágenes categorizadas con filtros avanzados.</p>
+            <a href="/src/gallery.html" class="btn btn-light btn-lg">Explorar ahora</a>
+        </div>
+    </header>
+
+    <!-- Sección Funcionalidades -->
+    <section id="features" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Funcionalidades Principales</h2>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <i class="bi bi-card-image fs-1"></i>
+                    <h4>Categorías de Imágenes</h4>
+                    <p>Explora una amplia colección de imágenes organizadas en categorías específicas.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="bi bi-funnel fs-1"></i>
+                    <h4>Filtros Avanzados</h4>
+                    <p>Encuentra imágenes fácilmente con filtros de búsqueda personalizados.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="bi bi-share fs-1"></i>
+                    <h4>Comparte con tu Equipo</h4>
+                    <p>Guarda y comparte imágenes con otros usuarios fácilmente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Equipo -->
+    <section id="team" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Nuestro Equipo</h2>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <img src="/public/assets/1.webp" class="rounded-circle mb-3" width="150" alt="Miembro 1">
+                    <h5>Nombre 1</h5>
+                    <p>Rol - Descripción breve</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="/public/assets/2.webp" class="rounded-circle mb-3" width="150" alt="Miembro 2">
+                    <h5>Nombre 2</h5>
+                    <p>Rol - Descripción breve</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="/public/assets/3.webp" class="rounded-circle mb-3" width="150" alt="Miembro 3">
+                    <h5>Nombre 3</h5>
+                    <p>Rol - Descripción breve</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Mi Proyecto. Todos los derechos reservados.</p>
+    </footer>
+
+    <script type="module" src="/src/js/index.js"></script>
 </body>
 
 </html>
