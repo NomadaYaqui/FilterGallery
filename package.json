@@ -1,27 +1,27 @@
 {
-  "name": "galeria-imagenes",
-  "source": "src/index.html",
+  "name": "filtergallery",
   "version": "1.0.0",
+  "description": "Este proyecto es una galería de imágenes filtrada, desarrollada con **HTML, CSS y JavaScript**, utilizando **Parcel** como bundler para facilitar el desarrollo y la optimización.",
+  "main": "index.js",
   "scripts": {
-    "start": "parcel src/index.html --open --port 3000",
-    "dev": "parcel /index.html --no-cache",
-    "build": "parcel build src/index.html --dist-dir dist --no-content-hash",
-    "clean": "rimraf dist .parcel-cache",
-    "format": "prettier --write src/**/*.{html,scss,js}",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html --dist-dir dist",
     "preview": "npx serve dist"
   },
-  "dependencies": {
-    "@popperjs/core": "^2.11.8",
-    "bootstrap": "^5.3.3"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NomadaYaqui/FilterGallery.git"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NomadaYaqui/FilterGallery/issues"
+  },
+  "homepage": "https://github.com/NomadaYaqui/FilterGallery#readme",
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.13.3",
     "parcel": "^2.13.3",
-    "prettier": "^3.5.0",
-    "rimraf": "^6.0.1",
-    "sass": "^1.84.0"
-  },
-  "browserslist": [
-    "defaults"
-  ]
+    "serve": "^14.2.4"
+  }
 }

@@ -5,16 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galería Filtrable</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <link rel="stylesheet" href="/src/css/styles.scss">
-
-
 
 </head>
 
 <body>
-
 
     <div class="container text-center mt-3">
         <h2 class="mb-3">Categorías de Imágenes</h2>
@@ -30,21 +25,7 @@
         </div>
     </div>
 
-    <script>
-        $(document).ready(function () {
-            var $grid = $('.grid').isotope({
-                itemSelector: '.grid-item',
-                layoutMode: 'fitRows'
-            });
-
-            $('.filter-btn').on('click', function () {
-                var filterValue = $(this).attr('data-filter');
-                $grid.isotope({ filter: filterValue });
-            });
-        });
-    </script>
-
-
+    <script type="module" src="/src/js/main.js"></script>
 
 </body>
 
