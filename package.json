@@ -21,7 +21,11 @@
   },
   "homepage": "https://github.com/NomadaYaqui/FilterGallery#readme",
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.13.3",
     "parcel": "^2.13.3",
     "serve": "^14.2.4"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3"
   }
 }
